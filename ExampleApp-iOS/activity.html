@@ -1,0 +1,178 @@
+<!-- Created by July on 2016/11/23. -->
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+  <title>拼人气抢红包</title>
+</head>
+  <style type="text/css">
+    body{ margin: 0; background-color: #fff;font-family:Ping Fang, "Microsoft YaHei", Helvetica, Arial, sans-serif;color: #202634;}
+    ul,li{ list-style: none; margin: 0; padding:0;}
+    .banner{ width: 100%;height: 100%; margin: 0 auto; }
+    .main{width: 100%; margin-top:-5px;}
+    .flight{ width: 100%; margin: 0 auto;  }
+    .main h3{ display:block; width:100%; margin:0; padding:0; height:35px; background:#386fae; color:#fff; line-height:35px; text-align:center; font-size:14px; font-weight:normal; letter-spacing:2px;}
+    .flight_main{ width:100%;}
+    .flight_main ul{ width:96%; margin: 15px auto;}
+    .flight_main ul li{ float:left; width:42%; height: 67px; margin:15px 4%; border-radius: 0.5px; box-shadow: 4px 4px 9px rgba(60,148,250,.2);}
+
+    .Return{ width:96%; height: 34px; margin:0 auto; padding:0 2%; color: #fff; background-color: #386fae;}
+    .Return strong{ display: block; float: left; width:32%; font-size: 13px; font-weight: normal;text-align: center; line-height: 34px;}
+    .Return span{ display: block; float: left; width:36%; height: 34px; text-align: center; font-size:8px;-webkit-transform:scale(0.6); background: url("http://www.hzapin.com/return.png") center 15px no-repeat; line-height: 20px;}
+    .price{ width:100%; height: 33px; margin: 0 auto; padding:0; background-color: #fff; color: #d44f49; font-size:10px; -webkit-transform:scale(0.8); line-height: 33px;text-align: center;}
+    .price strong{ font-size: 18px; }
+    .price span{ color: #000; font-size: 8px; }
+    .content{ width: 100%; clear: both; padding:20px 0 5px;}
+    .content ul,.stocks ul{ width: 90%; margin:15px auto;}
+    .content ul li,.stocks ul li{ width:100%; font-size: 12px;color: #000; letter-spacing: 1px; line-height: 20px}
+    .stocks{ width: 100%; clear: both; padding:20px 0;}
+
+    @font-face{
+      font-family: 'Ping Fang';
+      src: url('http://www.hzapin.com/Ping%20Fang.ttf');
+      font-weight: normal;
+      font-style: normal;
+    }
+   </style>
+<body>
+  <div class="banner">
+    <img src="http://www.hzapin.com/banner.jpg" width="100%">
+  </div>
+  <div class="main">
+    <div class="flight">
+      <h3>热门航线</h3>
+      <div class="flight_main">
+        <ul>
+          <li id="100">
+            <div class="Return"><strong>杭州</strong><span>4天往返</span><strong>海口</strong></div>
+            <div class="price"><strong>840</strong>元<span>(10人以上团)</span></div>
+          </li>
+          <li id="101">
+            <div class="Return"><strong>杭州</strong><span>5天往返</span><strong>三亚</strong></div>
+            <div class="price"><strong>1150</strong>元<span>(10人以上团)</span></div>
+          </li>
+          <li id="102">
+            <div class="Return"><strong>杭州</strong><span>5天往返</span><strong>冲绳</strong></div>
+            <div class="price"><strong>1799</strong>元<span>(10人以上团)</span></div>
+          </li>
+          <li id="103">
+            <div class="Return"><strong>杭州</strong><span>4天往返</span><strong>香港</strong></div>
+            <div class="price"><strong>1650</strong>元<span>(10人以上团)</span></div>
+          </li>
+          <li id="104">
+            <div class="Return"><strong>杭州</strong><span>5天往返</span><strong>清迈</strong></div>
+            <div class="price"><strong>1800</strong>元<span>(10人以上团)</span></div>
+          </li>
+          <li id="105">
+            <div class="Return"><strong>杭州</strong><span>4天往返</span><strong>曼谷</strong></div>
+            <div class="price"><strong>1850</strong>元<span>(10人以上团)</span></div>
+          </li>
+          <li id="106">
+            <div class="Return"><strong>杭州</strong><span>6天往返</span><strong>济州</strong></div>
+            <div class="price"><strong>1800</strong>元<span>(10人以上团)</span></div>
+          </li>
+          <li id="107">
+            <div class="Return"><strong>杭州</strong><span>6天往返</span><strong>大阪</strong></div>
+            <div class="price"><strong>1899</strong>元<span>(10人以上团)</span></div>
+          </li>
+          <li id="108">
+            <div class="Return"><strong>杭州</strong><span>6天往返</span><strong>芽庄</strong></div>
+            <div class="price"><strong>2245</strong>元<span>(10人以上团)</span></div>
+          </li>
+          <li id="109">
+            <div class="Return"><strong>杭州</strong><span>6天往返</span><strong>巴厘岛</strong></div>
+            <div class="price"><strong>3750</strong>元<span>(10人以上团)</span></div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="content">
+      <h3>活动内容</h3>
+      <ul>
+       <li>1.旅行社在APP购买旅行团机票交易完成，微信群发红包200元。</li>
+       <li>2.供应商在APP出售旅行团机票交易完成，微信群发红包100元。</li>
+      </ul>
+    </div>
+    <div class="stocks">
+      <h3>活动规则</h3>
+      <ul>
+        <li>1.本活动旅行社和机票供应商均可参加。</li>
+        <li>2.10人以上为旅行团，机票总金额为18000以上参加本活动。</li>
+        <li>3.本活动只限浙江省内。</li>
+        <li>4.本活动红包严禁公司内部人员抢。</li>
+        <li>5.本活动严禁刷单行为，如有发现取消活动资格。</li>
+        <li>6.本活动最终解释权归爱拼机所有。</li>
+      </ul>
+    </div>
+  </div>
+  <script>
+      function setupWebViewJavascriptBridge(callback) {
+          if (window.WebViewJavascriptBridge) { return callback(WebViewJavascriptBridge); }
+          if (window.WVJBCallbacks) { return window.WVJBCallbacks.push(callback); }
+          window.WVJBCallbacks = [callback];
+          var WVJBIframe = document.createElement('iframe');
+          WVJBIframe.style.display = 'none';
+          WVJBIframe.src = 'wvjbscheme://__BRIDGE_LOADED__';
+          document.documentElement.appendChild(WVJBIframe);
+          setTimeout(function() { document.documentElement.removeChild(WVJBIframe) }, 0)
+      }
+  setupWebViewJavascriptBridge(function(bridge) {
+                               var uniqueId = 1
+                               //自定义一个打印方法
+                               function log(message, data) {
+                               var log = document.getElementById('log')
+                               var el = document.createElement('div')
+                               el.className = 'logLine'
+                               el.innerHTML = uniqueId++ + '. ' + message + ':<br/>' + JSON.stringify(data)
+                               if (log.children.length) { log.insertBefore(el, log.children[0]) }
+                               else { log.appendChild(el) }
+                               }
+                               //JS注册监听,等待OC调用
+                               bridge.registerHandler('testJavascriptHandler', function(data, responseCallback) {
+                                                      log('ObjC called testJavascriptHandler with', data)
+                                                      var responseData = { 'Javascript Says':'Right back atcha!' }
+                                                      log('JS responding with', responseData)
+                                                      //收到监听调回给OC
+                                                      responseCallback(responseData)
+                                                      })
+                               
+                               document.body.appendChild(document.createElement('br'))
+                               
+                               var li = document.getElementById('100')
+                               li.onclick = function(e) {
+                               e.preventDefault()
+                                var truthBeTold = window.confirm("单击“确定”继续。单击“取消”停止。");
+                               log('JS calling handler "testObjcCallback"')
+                               bridge.callHandler('testObjcCallback', {'foo': 'bar'}, function(response) {
+                                                  log('JS got response', response)
+                                                  })
+                               }
+                             
+                               
+                               for(var i=100;i<109;i++){
+                                    function addAction(w){
+                                            var lie = document.getElementById(i)
+                                            lie.onclick = function() {
+                                            e.preventDefault()
+                                            var truthBeTold = window.confirm("单击“确定”继续。单击“取消”停止。");
+                                            bridge.callHandler('testObjcCallback', {'foo': 'bar'}, function(response) {log('JS got response', response)})
+                                            }
+                                        }(i)
+                               }
+                               
+                               var callbackButton = document.getElementById('buttons').appendChild(document.createElement('button'))
+                               callbackButton.innerHTML = 'Fire testObjcCallback'
+                               callbackButton.onclick = function(e) {
+                               e.preventDefault()
+                               log('JS calling handler "testObjcCallback"')
+                               bridge.callHandler('testObjcCallback', {'foo': 'bar'}, function(response) {
+                                                  log('JS got response', response)
+                                                  })
+                               }
+                })
+  </script>
+  <div id='buttons'></div> <div id='log'></div>
+</body>
+</html>
